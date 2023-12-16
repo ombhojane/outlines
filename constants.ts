@@ -5,7 +5,7 @@ export const MAX_FREE_COUNTS = 5;
 
 export const tools = [
   {
-    label: 'AI Text Detection',
+    label: 'Upload',
     icon: TextIcon,
     href: '/conversation',
     color: "text-violet-500",

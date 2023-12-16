@@ -15,31 +15,19 @@ const poppins = Montserrat ({ weight: '600', subsets: ['latin'] });
 
 const routes = [
   {
-    label: 'Dashboard',
-    icon: LayoutDashboard,
-    href: '/dashboard',
-    color: "text-sky-500"
-  },
-  {
-    label: 'AI Text Detection',
+    label: 'Upload',
     icon: TextIcon,
     href: '/conversation',
     color: "text-violet-500",
   },
   {
-    label: 'Image Insights',
-    icon: ImageIcon,
-    color: "text-pink-700",
-    href: '/image',
+    label: 'Analytics',
+    icon: LayoutDashboard,
+    href: '/dashboard',
+    color: "text-sky-500"
   },
   {
-    label: 'Fake news Detection',
-    icon: NewspaperIcon,
-    color: "text-orange-700",
-    href: '/video',
-  },
-  {
-    label: 'About True Captions',
+    label: 'About Outlines',
     icon: AlignHorizontalDistributeCenterIcon,
     href: '/settings',
   },
@@ -62,7 +50,7 @@ export const Sidebar = ({
             <Image fill alt="Logo" src="/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", poppins.className)}>
-            True Captions
+            Outlines
           </h1>
         </Link>
         <div className="space-y-1">

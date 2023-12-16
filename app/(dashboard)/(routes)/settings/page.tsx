@@ -8,8 +8,8 @@ const TrueCaptionsDocsPage = async () => {
     <div>
       <Heading
         icon={Newspaper}
-        title="True Captions Docs"
-        description="Explore the powerful features offered by True Captions."
+        title="Outlines Docs"
+        description="Explore the powerful features offered by Outlines."
         bgColor="blue-100" // Adjust color to match your theme
         iconColor="blue-600" // Adjust color to match your theme
       />
@@ -26,19 +26,7 @@ const TrueCaptionsDocsPage = async () => {
           />
 
           {/* Feature 2: Image Insights */}
-          <FeatureCard
-            title="Image Insights"
-            description="Unlock details, patterns, and information within images using cutting-edge technology."
-            icon={Search} // Placeholder icon for now
-          />
-
-          {/* Feature 3: Fake News Detector */}
-          <FeatureCard
-            title="Fake News Detector"
-            description="Stay informed and avoid misinformation. Sophisticated algorithms identify potential misinformation in news content."
-            // Note: Replace "/* Missing Icon */" with a suitable icon
-            icon={Newspaper} 
-          />
+          
         </div>
 
         <h2 className="text-2xl font-bold mb-4">Further Exploration & Relevant Links</h2>
