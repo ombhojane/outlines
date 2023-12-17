@@ -3,7 +3,7 @@
 import * as z from "zod";
 import { LeafyGreen, LeafIcon, MessageSquare, ArrowRight, Text } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { ChatCompletionRequestMessage } from "openai";
@@ -39,11 +39,11 @@ const ConversationPage = () => {
 
   const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { value: SetStateAction<string>; }; }) => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     // Perform your logic with the input value here
