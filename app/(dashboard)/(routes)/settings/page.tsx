@@ -20,8 +20,8 @@ const TrueCaptionsDocsPage = async () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Feature 1: AI Text Detector */}
           <FeatureCard
-            title="AI Text Detector"
-            description="Analyze text content with advanced AI algorithms. Gain insights into patterns and sentiments."
+            title="Audio to Text Summerizations"
+            description="Transcribe audio files into Text and have highly acceptable translations with Sentimental and Emotion analysis."
             icon={Text} // Placeholder icon for now
           />
 
@@ -33,13 +33,13 @@ const TrueCaptionsDocsPage = async () => {
 
         <ul className="space-y-4">
           <li>
-            <a href="/docs/detailed-text-analysis">Dive deeper into AI Text Detector capabilities.</a>
+            <a href="https://storiesomi.hashnode.dev/speaker-recognition">Speaker Recognition.</a>
           </li>
           <li>
-            <a href="/docs/image-recognition-examples">Discover real-world use cases for Image Insights.</a>
+            <a href="https://www.researchgate.net/publication/342147736_Speech_to_text_conversion_and_summarization_for_effective_understanding_and_documentation">Speech to text conversion and summarization.</a>
           </li>
           <li>
-            <a href="/docs/combating-misinformation">Learn how the Fake News Detector works.</a>
+            <a href="https://github.com/ombhojane/outlines">Learn how Outlines works.</a>
           </li>
         </ul>
       </div>
