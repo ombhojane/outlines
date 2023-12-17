@@ -51,10 +51,12 @@ export default function HomePage() {
           </div>
           </div>
           <div className="dropDown">
-            <h1 className="dropDownTitle">Summary: <span>AgentID: 215</span></h1>
-            <p className="summarized">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
-            </p>
+            <div>
+              <h1 className="dropDownTitle">Summary: <span>AgentID: 215</span></h1>
+              <p className="summarized">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
+              </p>
+            </div>
           </div>
         </div>
         <br />
@@ -73,10 +75,12 @@ export default function HomePage() {
           </div>
           </div>
           <div className="dropDown">
-            <h1 className="dropDownTitle">Summary: <span>AgentID: 256</span></h1>
-            <p className="summarized">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
-            </p>
+            <div>
+              <h1 className="dropDownTitle">Summary: <span>AgentID: 215</span></h1>
+              <p className="summarized">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
+              </p>
+            </div>
           </div>
         </div>
       </div>

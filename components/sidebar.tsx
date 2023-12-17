@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Montserrat } from 'next/font/google'
-import { AlignHorizontalDistributeCenterIcon, ClipboardPasteIcon, Code, ImageIcon, LayoutDashboard, MessageSquare, Music, NewspaperIcon, Settings, TextIcon, VideoIcon } from "lucide-react";
+import { AlignHorizontalDistributeCenterIcon, ClipboardPasteIcon, Code, ImageIcon, LayoutDashboard, MessageSquare, Music, NewspaperIcon, Settings, Table, TextIcon, VideoIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { absoluteUrl, cn } from "@/lib/utils";
@@ -25,6 +25,11 @@ const routes = [
     icon: LayoutDashboard,
     href: '/dashboard',
     color: "text-sky-500"
+  },
+  {
+    label: 'Dynamic Collections',
+    icon: Table,
+    href: '/image',
   },
   {
     label: 'About Outlines',

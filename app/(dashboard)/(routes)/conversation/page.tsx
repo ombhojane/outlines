@@ -71,14 +71,7 @@ const ConversationPage = () => {
             type="text"
           />  
         <br />
-        <label className="label label2">
-          Agent ID:
-        </label>
-        <br />
-        <input type="text"
-            value={inputValue}
-            onChange={handleChange}
-            required />
+        <input type="file" />
         <br />
         <button className="button submitButton" type="submit">Submit</button>
       </form>
