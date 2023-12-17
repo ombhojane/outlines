@@ -13,7 +13,7 @@ export const TrueCaptionsHero = () => {
           <TypewriterComponent
             options={{
               strings: [
-                "Text Validation.",
+                "Audio-to-Text Summarizations.",
                 "Image Insights.",
                 "News Verification.",
               ],
@@ -24,7 +24,7 @@ export const TrueCaptionsHero = () => {
         </div>
       </div>
       <div className="text-sm md:text-xl font-light text-zinc-400">
-        Ensure the accuracy of your content before sharing it with the world.
+        Ensure the accuracy of your content through automated audio-to-text summarizations before sharing it with the world.
       </div>
       <div>
         <Link href="/sign-in">

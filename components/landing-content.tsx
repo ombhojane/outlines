@@ -5,20 +5,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
-    title: "Text Validator",
-    description: "Input texts and check if they are true or not.",
+    title: "Audio-to-Text Converter",
+    description: "Convert audio files into text for easy analysis and reference.",
   },
   {
-    title: "Image Insights",
-    description: "Input an image, and we generate image captions and search about the image over the internet.",
+    title: "Summarization Insights",
+    description: "Generate concise summaries of lengthy audio content for quick understanding.",
   },
   {
-    title: "Content Analyzer",
-    description: "Analyze the content of articles and documents to ensure accuracy and credibility.",
+    title: "Sentimental Analysis",
+    description: "Sentimental analysis of the transcribed content .",
   },
   {
-    title: "Social Media Fact-Checker",
-    description: "Validate information shared on social media platforms, preventing the spread of misinformation.",
+    title: "Highlights of the Session",
+    description: "Provides most important decisions taken duting session.",
   },
   // Add more features as needed
 ];
