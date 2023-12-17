@@ -1,42 +1,84 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
+
 
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 import { tools } from "@/constants";
+import React, { useState } from 'react';
+import Calendar from "./Calender";
+// import Calendar from 'Calender.tsx';
 
 export default function HomePage() {
   const router = useRouter();
 
+  const [isCalendarOpen, setCalendarOpen] = useState(false);
+
+  const handleFilterButtonClick = () => {
+    setCalendarOpen(!isCalendarOpen);
+  };
+
   return (
     <div>
-      <div className="mb-8 space-y-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Welcome to Outlines
+      <div className="mb-8 space-y-4 filterHeader">
+        <h2 className="text-2xl md:text-4xl font-bold text-left dateHeader">
+          Date: 17/12/2023
         </h2>
-        <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Explore dynamic features to validate your content
-        </p>
-        <p className="text-muted-foreground font-light text-sm md:text-lg text-center">More info will be added here
-        </p>
+        <div>
+      <button className="filterButton">
+        Filters
+      </button>
+      <Calendar />
+    </div>
       </div>
-      <div className="px-4 md:px-20 lg:px-32 space-y-4">
-        {tools.map((tool) => (
-          <Card onClick={() => router.push(tool.href)} key={tool.href} className="p-4 border-black/5 flex items-center justify-between hover:shadow-md transition cursor-pointer">
-            <div className="flex items-center gap-x-4">
-              <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>
-                <tool.icon className={cn("w-8 h-8", tool.color)} />
-              </div>
-              <div className="font-semibold">
-                {tool.label}
-              </div>
-            </div>
-            <ArrowRight className="w-5 h-5" />
-          </Card>
-        ))}
+      <div className="summarySection">
+        <div className="summaryDropDown">
+          <div className="summary">
+          <div className="IDNO">
+            <h1>1</h1>
+          </div>
+          <div className="sentiment">
+            <Image src="/positive.png" alt="" width={30} height={30}/>
+            <h1>Positive</h1>
+          </div>
+          <div className="NPS">
+            <h1>8 NPS</h1>
+            <ArrowDown/>
+          </div>
+          </div>
+          <div className="dropDown">
+            <h1 className="dropDownTitle">Summary: <span>AgentID: 215</span></h1>
+            <p className="summarized">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
+            </p>
+          </div>
+        </div>
+        <br />
+        <div className="summaryDropDown">
+          <div className="summary">
+          <div className="IDNO">
+            <h1>2</h1>
+          </div>
+          <div className="sentiment sentiment2">
+            <Image src="/negative.png" alt="" width={30} height={30}/>
+            <h1>Negative</h1>
+          </div>
+          <div className="NPS">
+            <h1>4 NPS</h1>
+            <ArrowDown/>
+          </div>
+          </div>
+          <div className="dropDown">
+            <h1 className="dropDownTitle">Summary: <span>AgentID: 256</span></h1>
+            <p className="summarized">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem labore molestias laboriosam veritatis minima eius facilis hic necessitatibus provident, sapiente velit itaque quos beatae placeat commodi ipsam corporis doloremque ducimus ab?
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
